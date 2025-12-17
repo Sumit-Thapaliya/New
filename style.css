@@ -1,14 +1,124 @@
-#intro
-{
-    color: aqua;
-    text-align: center;
-    border: 2px solid black;
-    padding:2px;
-
-
+/* 1. RESET defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Keeps padding inside the box size */
 }
-body{
-    background-color: azure;
+
+body {
+    font-family: sans-serif;
+    background-color: #25d5e9; /* Light blue-grey background */
+    color: #0e18e1;
+    line-height: 1.6;
+}
+/* 2. CENTER THE CARD */
+main {
+    display: flex;
+    justify-content: center; /* Center horizontally (Left/Right) */
+    align-items: center;     /* Center vertically (Up/Down) */
+    padding: 20px;
+}
+
+
+/* Optional: Style the back link at top */
+.back-link {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
     
-    
+    color: #e30f0f;
+    font-weight: bold;
+}
+
+
+
+/* 3. THE CARD STYLE */
+.signup-card {
+    background-color: rgb(12, 234, 108);
+    width: 100%;
+    max-width: 450px; /* Don't get wider than this on big screens */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(220, 6, 6, 0.1); /* Soft shadow drop */
+}
+
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.form-header h1 {
+    font-size: 24px;
+    color: #087aeb;
+}
+
+
+/* 4. INPUTS & LABELS */
+.form-group {
+    margin-bottom: 20px; /* Space between each question */
+}
+
+label {
+    display: block; /* Puts label ABOVE the input */
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Style all text-like inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%; /* Fill the card */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/* When user clicks inside an input */
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+/* 5. RADIOS & CHECKBOXES */
+.radio-group {
+    margin-bottom: 5px;
+}
+
+.radio-group input, 
+.checkbox-group input {
+    width: auto; /* Don't stretch these */
+    margin-right: 10px;
+}
+
+.checkbox-group {
+    display: flex; /* Aligns box and text side-by-side */
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+/* 6. SUBMIT BUTTON */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff; /* Bright Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3; /* Darker blue when hovering */
 }
