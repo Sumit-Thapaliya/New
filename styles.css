@@ -40,7 +40,7 @@ header h1:hover{
 .image:hover 
 {
     border:0px solid rgb(9, 1, 38);;
-    transform: rotate(10deg) scale(1.2);
+    transform: rotate(-10deg) scale(1.2);
     cursor:pointer;
 }
 .about{
@@ -254,3 +254,4 @@ main{
         padding: 5px;
     }
 }
+
